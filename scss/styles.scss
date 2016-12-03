@@ -1,0 +1,96 @@
+@import "../node_modules/normalize.css/normalize";
+
+body {
+  margin: 0;
+    background-color: yellow;
+}
+
+.wrapper {
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 25px;
+  width: 960px;
+  overflow: auto;
+
+}
+
+input {
+  &[type="text"],
+  &[type="date"] {
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+button{
+  height: 40px;
+}
+
+.title{
+  width: 500px;
+
+.date{
+  margin: 0 63px;
+
+  .button {
+    height: 40px;
+  }
+}
+
+}
+.title,
+.date,
+.submitbutton{
+  display: block;
+  float: left;
+}
+
+.list-item{
+  clear: left;
+  list-style: none;
+  padding: 0px;
+  float: left;
+  width: 100%;
+}
+
+.item.date{
+  float: right;
+}
+
+li{
+  display: list-item;
+  height:40px;
+
+
+  .done{
+    background-color: #ccc;
+    text-decoration: line-through;
+  }
+}
+
+.remove-button{
+  float: left;
+  height: 20px;
+  margin-left: 10px;
+
+}
+
+@media(max-width: 960px){
+  .wrapper {
+    width: 100%;
+  }
+
+.title {
+  width: 100%;
+}
+.date,
+.submitbutton{
+  margin: 20px 0 0;
+  width: calc(50%-10px);
+}
+
+.date {
+  margin-right: 20px;
+}
+
+}
